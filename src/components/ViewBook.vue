@@ -7,6 +7,8 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 const booksStore = useBooksStore()
 const book = booksStore.selectedBook
+const message = ref('')
+const snackbar = ref(false)
 
 //cart
 const cartStore = useCartStore()
@@ -15,6 +17,8 @@ const quantity = ref(1)
 function buy(book){
     book.quantity = quantity.value
     cartStore.updateCart(book)
+    message.value = 'Order made succefully and is being processed'
+    snackbar.value= true
 }
 </script>
 
@@ -67,6 +71,7 @@ function buy(book){
                         <v-btn elevation="4" variant="elevated" @click="buy(book)"> Add to Cart </v-btn>
                     </v-card-actions>
                 </v-card>
+            <v-snackbar v-model="snackbar" :timeout="3000" color="warning">{{ message }}</v-snackbar>
             </v-col>
         </v-row>
     </v-container>

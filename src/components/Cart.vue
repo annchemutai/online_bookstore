@@ -30,7 +30,7 @@ const cart = useCartStore().cart
                 <v-card color="primary">
                     <v-row>
                         <v-col md="4" class="text-center">
-                            <v-avatar color="grey" rounded="0" size="150" >
+                            <v-avatar color="grey" rounded="0" size="150" class="mt-10">
                                 <v-img :src="item.image" ></v-img>
                             </v-avatar>
                         </v-col>
@@ -42,6 +42,7 @@ const cart = useCartStore().cart
                                     <v-card-text>Total:{{ item.price * item.quantity}} </v-card-text>
                                 </v-card-item>
                                 <v-card-actions>
+                                    <v-spacer></v-spacer>
                                     <v-btn elevation="4" variant="elevated" @click="useCartStore().removeCart(item)"> Remove </v-btn>
                                     <v-btn elevation="4" variant="elevated"> Checkout </v-btn>
                                 </v-card-actions>
