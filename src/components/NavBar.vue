@@ -34,7 +34,7 @@ function logOut(){
         <v-btn to="/cart">Cart</v-btn>
         <v-btn to="/library">Library</v-btn>
         <v-btn to="/wishlist">Wish List</v-btn>
-        <v-btn to="/admin" >Admin</v-btn>
+        <v-btn to="/admin" v-if="isAdmin">Admin</v-btn>
         <v-btn icon="mdi-account" v-if="isAuthenticated" variant="tonal">{{letter}}
             <v-menu activator="parent">
                 <v-list>

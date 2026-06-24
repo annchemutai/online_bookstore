@@ -23,7 +23,7 @@ export const useUsersStore = defineStore('users',  {
                 address: "123, Main Street"
             },
             3:{
-                id: 1,
+                id: 3,
                 firstname: "Jack",
                 lastname: "Doe",
                 email: "jack@example.com",
@@ -32,7 +32,7 @@ export const useUsersStore = defineStore('users',  {
                 address: "123, Main Street"
             },
             4:{
-                id: 1,
+                id: 4,
                 firstname: "Joseph",
                 lastname: "Doe",
                 email: "joseph@example.com",
@@ -41,7 +41,7 @@ export const useUsersStore = defineStore('users',  {
                 address: "123, Main Street"
             },
             5:{
-                id: 1,
+                id: 5,
                 firstname: "Julie",
                 lastname: "Doe",
                 email: "julie@example.com",

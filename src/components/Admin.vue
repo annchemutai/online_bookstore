@@ -32,7 +32,7 @@ const tab = ref(null)
 </script>
 
 <template>
-    <v-container class="text-center mt-12 bg-secondary">
+    <v-container class=" mt-12 bg-secondary">
         <v-card>
             <v-tabs v-model="tab" align-tabs="center" color="primary" >
                 <v-tab :value="1">Books</v-tab>
@@ -179,7 +179,7 @@ const tab = ref(null)
                                 <tbody>
                                     <tr v-for="item in allOrders" :key="item.id" >
                                         <td>{{ item.customer }}</td>
-                                        <td>{{ item.book }}</td>
+                                        <td>{{ item.bookName }}</td>
                                         <td>{{ item.price }}</td>
                                         <td>{{ item.quantity }}</td>
                                         <td>{{ item.total_paid }}</td>
