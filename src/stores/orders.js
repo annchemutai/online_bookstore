@@ -30,7 +30,7 @@ export const useOrdersStore = defineStore('orders',  {
             },
             3:{
                 id: 4,
-                customer_id: 6,
+                customer_id: 5,
                 book_id: 3,
                 quantity: 1,
                 total_paid: 1800,

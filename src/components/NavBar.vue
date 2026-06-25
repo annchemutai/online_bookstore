@@ -11,7 +11,7 @@ const user = JSON.parse(localStorage.getItem('user'))
 
 let letter = ''
 if(user){
-    letter = user.firstname[0]
+    //letter = user.firstname[0]
 }
 
 function logOut(){
