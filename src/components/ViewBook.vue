@@ -60,7 +60,6 @@ function buy(book){
                             <v-row>
                                 <v-col md="4">Quantity</v-col>
                                 <v-col md="6">
-                                    <v-number-input v-model ="quantity" control-variant="split" density="compact" :min="1" :max="10" > </v-number-input>
                                 </v-col>
                             </v-row>
                         </v-card-text>

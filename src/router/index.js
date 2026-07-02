@@ -10,6 +10,7 @@ import ViewBook from '@/components/ViewBook.vue'
 import WishList from '@/components/WishList.vue'
 import SignUp from '@/components/SignUp.vue'
 import Login from '@/components/Login.vue'
+import Chat from '@/components/Chat.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,6 +54,10 @@ const router = createRouter({
     {
       path: '/login',
       component: Login
+    },
+    {
+      path: '/chat',
+      component: Chat
     }
   ],
 })

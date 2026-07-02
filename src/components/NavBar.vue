@@ -11,7 +11,7 @@ const user = JSON.parse(localStorage.getItem('user'))
 
 let letter = ''
 if(user){
-    //letter = user.firstname[0]
+    letter = user.firstname[0]
 }
 
 function logOut(){
@@ -34,6 +34,7 @@ function logOut(){
         <v-btn to="/cart">Cart</v-btn>
         <v-btn to="/library">Library</v-btn>
         <v-btn to="/wishlist">Wish List</v-btn>
+        <v-btn to="/chat">Chat</v-btn>
         <v-btn to="/admin" v-if="isAdmin">Admin</v-btn>
         <v-btn icon="mdi-account" v-if="isAuthenticated" variant="tonal">{{letter}}
             <v-menu activator="parent">
